@@ -1,0 +1,28 @@
+.text-reveal-section {
+  background: var(--bg-dark);
+  min-height: 100vh;
+}
+
+.text-reveal-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.reveal-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.4;
+  text-align: center;
+}
+
+.reveal-word {
+  display: inline-block;
+  margin-right: 0.3em;
+  transition: opacity 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .reveal-heading {
+    font-size: clamp(1.5rem, 6vw, 3rem);
+  }
+}
